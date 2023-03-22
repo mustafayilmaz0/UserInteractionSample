@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_toast"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="NORMAL toast" />
+
+        <Button
+            android:id="@+id/btn_ozel_toast"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="ÖZEL toast" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_menu_ac"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="Menu"
+        android:onClick="showPopUp"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintTop_toBottomOf="@+id/linear_toast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linear_alert"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu_ac"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn_alert"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_700"
+            android:text="NORMAL alert" />
+
+        <Button
+            android:id="@+id/btn_ozel_alert"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_700"
+            android:text="ÖZEL alert" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linear_alert"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn_snackbar"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="NORMAL snackbar" />
+
+        <Button
+            android:id="@+id/btn_geri_donus_snackbar"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="geri dönüş snackbar" />
+        <Button
+            android:id="@+id/btn_ozel_snackbar"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="ÖZEL snackbar" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_light_dark"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/linear_snackbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/iv_moon"/>
+
+    <LinearLayout
+        android:id="@+id/linear_dark_mode"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/iv_light_dark"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_light_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="normal mod"/>
+        <Button
+            android:id="@+id/btn_dark_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="karanlık mod"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
