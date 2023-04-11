@@ -34,23 +34,49 @@
             android:text="ÖZEL toast" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_menu_ac"
-        android:layout_width="120dp"
+    <LinearLayout
+        android:id="@+id/linear_menu_spinner"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:text="Menu"
-        android:onClick="showPopUp"
-        android:backgroundTint="@color/purple_200"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/linear_toast"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_menu_ac"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:text="Menu"
+            android:onClick="showPopUp"
+            android:backgroundTint="@color/purple_200"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:baselineAligned="false"/>
+
+        <TextView
+            android:background="@color/purple_200"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spinner"/>
+
+
+    </LinearLayout>
+
+
 
     <LinearLayout
         android:id="@+id/linear_alert"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/btn_menu_ac"
+        app:layout_constraintTop_toBottomOf="@+id/linear_menu_spinner"
         android:orientation="horizontal"
         android:weightSum="2"
         tools:ignore="MissingConstraints">
@@ -135,7 +161,8 @@
             android:layout_height="40dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/btn_dark_light"
             android:text="normal mod"/>
         <Button
             android:id="@+id/btn_dark_mode"
@@ -143,11 +170,9 @@
             android:layout_height="40dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/btn_dark_light"
             android:text="karanlık mod"/>
-
-
-
 
     </LinearLayout>
 

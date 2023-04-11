@@ -7,8 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="iv_dark_light">#0EFBE4</color>
-    <color name="btn_dark_light">#0EFBE4</color>
-    <color name="tv_dark_light">@color/black</color>
-
+    <color name="iv_dark_light">#FFEE58</color>
+    <color name="btn_dark_light">#FFEE58</color>
+    <color name="tv_dark_light">@color/white</color>
 </resources>
