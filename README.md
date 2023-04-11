@@ -1,3 +1,3 @@
 # UserInteractionSample
 
-Toast Message, Pop Up Menu, Alert View, Snack Bar, Dark Mode Examples
+Toast Message, Pop Up Menu, Alert View, Snack Bar, Dark Mode, Spinner rep.
